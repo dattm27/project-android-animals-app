@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/iv_animal_cover"/>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:textColor="@color/orange_700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+
+            android:layout_weight="1" />
+
+
+        <ImageView
+
+            android:id="@+id/iv_phone"
+
+            android:layout_width="40dp"
+
+            android:layout_height="match_parent"
+
+            android:src="@drawable/ic_phone"
+
+            app:tint="@color/purple_700"
+
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:textColor="@color/purple_700"
+            android:textSize="18sp"
+            android:text=""
+
+            />
+        <ImageView
+
+            android:id="@+id/iv_fav"
+
+            android:layout_width="40dp"
+
+            android:layout_height="match_parent"
+
+            android:src="@drawable/ic_fav"
+
+            app:tint="@color/orange_700"
+
+            tools:ignore="ContentDescription" />
+
+    </TableRow>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="TextView" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

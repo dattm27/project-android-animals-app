@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <!-- ImageView cho ảnh động vật -->
+    <ImageView
+        android:id="@+id/iv_Animal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_elephant" />
+
+    <!-- EditText cho người dùng nhập số điện thoại -->
+    <EditText
+        android:id="@+id/et_Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_Animal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Phone"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <!-- Button cho lưu nội dung nhập -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_Save"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:text="Save" />
+
+        <!-- Button cho xóa toàn bộ nội dung -->
+        <Button
+            android:id="@+id/btn_Delete"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:text="Delete" />
+    </LinearLayout>
+
+
+</LinearLayout>
